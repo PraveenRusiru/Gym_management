@@ -96,8 +96,10 @@ mvn clean install
 mvn javafx:run
 
 🔒 Security & Authentication
-	•	User Authentication – Encrypted passwords using AES encryption.
-	•	Role-Based Access – Separate access controls for admins and trainers.
+	
+ •	User Authentication – Encrypted passwords using AES encryption.
+
+ •	Role-Based Access – Separate access controls for admins and trainers.
 
 📧 Contact & Support
 
