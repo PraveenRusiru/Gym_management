@@ -99,18 +99,6 @@ mvn javafx:run
 	•	User Authentication – Encrypted passwords using AES encryption.
 	•	Role-Based Access – Separate access controls for admins and trainers.
 
-📜 License
-
-This project is licensed under the MIT License – feel free to modify and use it.
-
-🤝 Contributing
-
-We welcome contributions! Follow these steps to contribute:
-	1.	Fork the repository.
-	2.	Create a new branch (feature-branch).
-	3.	Commit your changes.
-	4.	Push the branch and open a Pull Request.
-
 📧 Contact & Support
 
 For any issues or feature requests, please open an issue or contact us at:
