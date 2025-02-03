@@ -12,7 +12,7 @@ public class DBConnection {
     private DBConnection() throws SQLException {
         String URL ="jdbc:mysql://localhost:3306/Fitness";
         String USER ="root";
-        String PASSWORD ="12345678";
+        String PASSWORD ="********";
         connection = DriverManager.getConnection(URL,USER,PASSWORD);
     }
     public static DBConnection getInstance() throws SQLException {
