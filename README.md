@@ -7,18 +7,22 @@ The Gym Management System is a standalone software designed to help single-train
 🏗️ Architecture Overview
 
 This project follows a layered architecture, consisting of the following layers:
+
 	1.	Presentation Layer (UI Layer)
 	•	Built with JavaFX for a rich user experience.
 	•	Uses Scene Builder for FXML-based UI design.
 	•	Handles user interactions and sends requests to the service layer.
+ 
 	2.	Service Layer (Business Logic Layer)
 	•	Implements core application logic.
 	•	Contains validation and transformation logic for data received from the UI layer.
 	•	Manages interactions between the UI and data layers.
+ 
 	3.	Data Access Layer (DAO Layer)
 	•	Uses JDBC to interact with the MySQL database.
 	•	Contains DAO (Data Access Object) classes for CRUD operations.
 	•	Ensures data persistence and retrieval with optimized queries.
+ 
 	4.	Database Layer (Persistence Layer)
 	•	Stores all user, workout, nutrition, and payment data in a relational database.
 	•	Uses MySQL for structured data storage.
@@ -27,12 +31,19 @@ This project follows a layered architecture, consisting of the following layers:
 🏋️ Key Features
 
 ✅ Client Management – Add, update, and track client details.
+
 ✅ Workout Program Management – Create and assign workout routines dynamically.
+
 ✅ Nutrition Tracking – Monitor daily calorie, protein, carb, and fat intake.
+
 ✅ Progress Monitoring – Track client strength levels, weight, and fat percentage over time.
+
 ✅ Gym Level Determination – Classify clients as beginner, intermediate, or advanced based on their progress.
+
 ✅ Payment System – Manage gym membership and schedule payments.
+
 ✅ Supplement Outlet – Optional feature to recommend and manage supplements.
+
 ✅ Report Generation – Generate reports on client progress, financials, and gym performance.
 
 🛠️ Technologies Used
