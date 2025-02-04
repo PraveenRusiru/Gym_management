@@ -12,7 +12,7 @@ public class DAOFactory {
         return daoFactory;
     }
     public enum DAOType {
-        CLIENTCONTACT,CLIENT,EXERCISEINSHEDULE,MEMBERSHIP,NUTRATIONPROGRAMME,PAYMENT,SHEDULE,NOTEFORCLIENT,EXERCISE,INVENTORY,ORDERS,ORDERDETAILS,SUPPLIMENT;
+        CLIENTCONTACT,CLIENT,EXERCISEINSHEDULE,MEMBERSHIP,NUTRATIONPROGRAMME,PAYMENT,SHEDULE,NOTEFORCLIENT,EXERCISE,INVENTORY,ORDERS,ORDERDETAILS,SUPPLIMENT,ADMIN;
     }
 
     public SuperDAO getDAO(DAOType type) {
@@ -30,6 +30,7 @@ public class DAOFactory {
             case ORDERS:return new OrderDaoImpl();
             case ORDERDETAILS:return new OrderDetailDaoImpl();
             case SUPPLIMENT:return new SupplimentDaoImpl();
+            case ADMIN:return new AdminsDaoImpl();
             default:return null;
         }
     }

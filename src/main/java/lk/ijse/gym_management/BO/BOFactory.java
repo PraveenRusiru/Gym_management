@@ -13,7 +13,7 @@ public class BOFactory {
         return boFactory;
     }
     public enum BOType {
-        CLIENT,CLIENTCONTACT,EXERCISEINSHEDULE,MEMBERSHIP,NUTRATION,PAYMENT,SHEDULE,NOTEFORCLIENT,EXERCISE,INVENTORY,ORDERS,ORDERDETAILS,SUPPLIMENT;
+        CLIENT,CLIENTCONTACT,EXERCISEINSHEDULE,MEMBERSHIP,NUTRATION,PAYMENT,SHEDULE,NOTEFORCLIENT,EXERCISE,INVENTORY,ORDERS,ORDERDETAILS,SUPPLIMENT,ADMIN;
     }
     public  SuperBO getBOType(BOType type) {
         switch (type) {
@@ -30,6 +30,7 @@ public class BOFactory {
             case ORDERS:return new OrderBOImpl();
             case ORDERDETAILS:return new OrderDetailBOImpl();
             case INVENTORY:return new InventoryBOImpl();
+            case ADMIN:return new AdminsBOImpl();
             default:return null;
         }
     }
