@@ -1,109 +1,129 @@
-Gym Management System
+# 🏋️ Gym Management System
 
-📌 Project Overview
+## 📌 Project Description
 
-The Gym Management System is a standalone software designed to help single-trainer gyms efficiently manage their clients, workout plans, nutrition tracking, payments, and progress monitoring. The system follows a layered architecture to ensure maintainability, scalability, and separation of concerns.
+The **Gym Management System** is a desktop-based application designed to help **small and single-trainer gyms** efficiently manage their daily operations.
 
-🏗️ Architecture Overview
+- Simplifies client management, workout tracking, nutrition monitoring, memberships, and payments  
+- Reduces administrative workload on gym owners  
+- Designed for small and medium-sized gyms  
+- Built using a **layered architecture** for clean code, scalability, and easy maintenance  
 
-This project follows a layered architecture, consisting of the following layers:
+---
 
-	1.	Presentation Layer (UI Layer)
-	•	Built with JavaFX for a rich user experience.
-	•	Uses Scene Builder for FXML-based UI design.
-	•	Handles user interactions and sends requests to the service layer.
- 
-	2.	Service Layer (Business Logic Layer)
-	•	Implements core application logic.
-	•	Contains validation and transformation logic for data received from the UI layer.
-	•	Manages interactions between the UI and data layers.
- 
-	3.	Data Access Layer (DAO Layer)
-	•	Uses JDBC to interact with the MySQL database.
-	•	Contains DAO (Data Access Object) classes for CRUD operations.
-	•	Ensures data persistence and retrieval with optimized queries.
- 
-	4.	Database Layer (Persistence Layer)
-	•	Stores all user, workout, nutrition, and payment data in a relational database.
-	•	Uses MySQL for structured data storage.
-	•	Enforces constraints like foreign keys, indexes, and normalization for efficiency.
+## 🎯 Objectives
 
-🏋️ Key Features
+- Digitize gym operations for small and medium gyms  
+- Reduce manual record keeping  
+- Help single-trainer gym owners manage clients efficiently  
+- Accurately track workouts, nutrition, memberships, and payments  
 
-✅ Client Management – Add, update, and track client details.
+---
 
-✅ Workout Program Management – Create and assign workout routines dynamically.
+## 🏗️ System Architecture (Layered Architecture)
 
-✅ Nutrition Tracking – Monitor daily calorie, protein, carb, and fat intake.
+The application follows a **4-layer architecture**:
 
-✅ Progress Monitoring – Track client strength levels, weight, and fat percentage over time.
+### 1️⃣ Presentation Layer
+- JavaFX-based user interface  
+- FXML layouts designed using Scene Builder  
+- Handles user interactions and UI logic  
 
-✅ Gym Level Determination – Classify clients as beginner, intermediate, or advanced based on their progress.
+### 2️⃣ Service / Business Logic Layer
+- Contains business rules and validations  
+- Processes data before passing it to the DAO layer  
+- Acts as a bridge between UI and database layers  
 
-✅ Payment System – Manage gym membership and schedule payments.
+### 3️⃣ Data Access Layer (DAO)
+- Uses JDBC for database operations  
+- Handles CRUD operations  
+- Separates database logic from business logic  
 
-✅ Supplement Outlet – Optional feature to recommend and manage supplements.
+### 4️⃣ Database Layer
+- MySQL relational database  
+- Uses constraints, foreign keys, and normalization  
+- Securely stores client, workout, nutrition, and payment data  
 
-✅ Report Generation – Generate reports on client progress, financials, and gym performance.
+---
 
-🛠️ Technologies Used
-	•	Frontend: JavaFX (FXML, Scene Builder)
-	•	Backend: Java (JDK 17+), JDBC
-	•	Database: MySQL
-	•	Build Tool: Maven
-	•	Design Pattern: DAO Pattern
-	•	Security: AES Encryption for password storage
+## 🚀 Features
 
-📂 Project Structure
+- Client registration and profile management  
+- Workout plan creation and progress tracking  
+- Nutrition tracking and daily updates  
+- Membership and payment management  
+- Progress tracking and report generation  
+- Secure login with encrypted passwords  
+- JasperReports-based report generation  
 
-📦 GymManagementSystem  
- ┣ 📂 src  
- ┃ ┣ 📂 Controller          # Handles UI interactions  
- ┃ ┣ 📂 BO                  # Business logic layer  
- ┃ ┣ 📂 DAO                 # Data Access Layer   
- ┃ ┣ 📂 Entity              # Entity classes  
- ┃ ┣ 📂 util                # Utility functions (DB connection, validation, etc.)  
- ┃ ┗ 📂 DTO                 # Data travelling objects  
- ┃ ┗ 📂 DB                  # Database connections
- ┣ 📂 resources  
- ┃ ┣ 📂 cssForBody          # style sheets  
- ┃ ┣ 📂 material            # Images
- ┃ ┗ 📂 View                # fxml files
- ┣ 📜 pom.xml               # Maven dependencies  
- ┣ 📜 README.md             # Project documentation  
- ┗ 📜 GymManagementSystem.java  # Main application entry point  
+---
 
-🚀 Installation & Setup
+## 🛠️ Technologies Used
 
-Prerequisites
-	•	Java JDK 17
-	•	MySQL Server
-	•	Maven
+- **Programming Language:** Java  
+- **UI Framework:** JavaFX  
+- **Database:** MySQL  
+- **Database Connectivity:** JDBC  
+- **Build Tool:** Maven  
+- **Architecture Pattern:** Layered Architecture  
+- **Security:** AES password encryption  
 
-Steps to Run the Project
-	1.	Clone the repository
-
-git clone https://github.com/PraveenRusiru/Gym_management.git
-cd GymManagementSystem
+---
 
 
-	2.	Configure Database
-	•	Import the provided SQL file into MySQL.
-	•	Update DB credentials in application.properties.
-	3.	Build & Run
+## 📂 Project Structure
 
-mvn clean install
-mvn javafx:run
+Gym-Management-System
+- │
+- ├── controller      # UI controllers
+- ├── service         # Business logic
+- ├── dao             # Data access layer
+- ├── model           # Entity classes
+- ├── util            # Utility classes
+- ├── view            # FXML UI files
+- ├── resources       # CSS, images, reports
+- └── AppInitializer  # Application entry point
 
-🔒 Security & Authentication
-	
- •	User Authentication – Encrypted passwords using AES encryption.
+## ⚙️ Installation & Setup
 
- •	Role-Based Access – Separate access controls for admins and trainers.
+### Prerequisites
+- Java JDK 17 or higher  
+- MySQL Server  
+- Maven  
+- JavaFX properly configured  
 
-📧 Contact & Support
+### Setup Steps
+- Clone the repository  
+  ```bash
+  https://github.com/PraveenRusiru/Gym_management.git
+- Open the project in IntelliJ IDEA
+- Configure database connection details
+- Run the SQL script to create database tables
+- Launch the application
 
-For any issues or feature requests, please open an issue or contact us at:
-📩 praveenrusiru752@gmail.com
+ ##  🔐 Security
+- Passwords are stored using AES encryption
+- Prevents storing plain-text credentials
+- Supports role-based access control
+- Admin
+- Trainer
 
-This README ensures clarity for new developers, making it easy to set up and understand the project. Let me know if you want any modifications! 🚀
+⸻
+
+## 📈 Future Enhancements
+- Cloud-based database support
+- Mobile application integration
+- Advanced analytics and dashboards
+- Biometric authentication support
+- Notification system for membership expiry
+
+⸻
+
+## 👨‍💻 Developer
+- Project Type: Personal / Academic Project
+- Domain: Fitness & Health Management
+
+⸻
+
+## 📄 License
+- This project is developed for educational and personal use only
